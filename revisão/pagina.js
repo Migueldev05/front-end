@@ -6,12 +6,19 @@ function pagina(){
     div.classList.add("Container");
 
     const input = document.createElement("input");
-    inpput.textContent = "Digite aqui!";
-    input.classList.add('')
+    inpput.textContent = "Digite aqui!"
+    input.classList.add('input')
+    input.type = 'text';
+    input.id = 'tarefaInput'
+    input.placeholder = 'Crie sua tarefa aqui!';
 
-    const botao = document.getElementById("btnAdicionar");
+    const botao = document.createElement("button");
+    button.textContent = "Adicionar";
+    button.classList.add('botao');
 
-    const lista = document.getElementById("listaTarefas");
+    const lista = document.createElement("ul");
+    ul.textContent = "Lista";
+    ul.classList.add('ul')
 
     botao.addEventListener("click", ()=>{
         const novaTarefa = document.createElement("li"); // Linha de Base
