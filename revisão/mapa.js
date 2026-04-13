@@ -15,7 +15,10 @@ const legumes = new Map([
 console.log(`O preço do quilo de abobrinha é: ${legumes.get("abobrinha")}R$`);
 
 frutas.set("manga", 12);
-frutas.delete("banana", 7);
-frutas.set("morango", 9);
+
 console.log(frutas);
 
+legumes.forEach((valor, chave) => console.log(`${chave} = ${valor}`));
+for (const x of legumes.keys()){
+    console.log(x);
+};
