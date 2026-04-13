@@ -18,7 +18,7 @@ console.log(pessoa.sobrenome);
 const professor = JSON.stringify(pessoa);
 console.log(professor);
 
-const aluno = `{"nome":"Bento", "sobrenome":"Andrade", "idade":69, "matricula}`
+const aluno = `{"nome":"Bento", "sobrenome":"Andrade", "idade":69, "matricula":true}`
 const alunoObjeto = JSON.parse(aluno)
 console.log(alunoObjeto)
 console.log(alunoObjeto.nome)
