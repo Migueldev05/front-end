@@ -1,6 +1,6 @@
-import { carro } from "./encapsulamento"
+import { Carro } from "./encapsulamento.js"
 
-class Modelo extends carro {
+class Modelo extends Carro {
     constructor(nome, ano, modelo){
         super(nome, ano),
         this.modelo = modelo;
@@ -11,5 +11,4 @@ class Modelo extends carro {
 };
 
 const carroArthur = new Modelo ("Spin", 2018, "Standard");
-
-console.log(carroArthur.exibir);
+console.log(carroArthur.exibir());
