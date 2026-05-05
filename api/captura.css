@@ -14,7 +14,7 @@ html, body{
 #captureButton{
     width: 640;
     height: 480;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold; 
     border-radius: 20px;
 }

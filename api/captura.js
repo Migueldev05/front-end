@@ -29,13 +29,16 @@ function enviarImagemParaServidor(imageDataURL){
     // Simular o envio da imagem para um servidor
     console.log("Enviando a imagem para o servidor...")
 
-    fetch("/", {
+    const base64String = imageDataURL.split(',')[1];
+
+    fetch("http://DOP3080-1247456:8000/images", {
         method: "POST",
-        body: JSON.stringify(),
+        body: JSON.stringify({ image: base64String, mime_type: 'image/png'}),
         headers: {
             "Content-Type": "application/json"
         }
-    }).then(resposta => resposta.json)
+
+    }).then(resposta => resposta.json())
       .then(dados => {
         console.log("Resposta do servidor: ", dados);
       })
