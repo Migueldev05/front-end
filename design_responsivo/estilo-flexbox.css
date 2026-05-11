@@ -19,11 +19,34 @@ header, footer{
     padding: 1em 0;
 }
 
-p{
-    margin-left: 100px;
-    margin-right: 100px;
+.container{
+    display: flex; /* Habilita o flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linhan se não couberem */
+    width: 90%;
+    max-width: 1200px; /* Limite máximo para telas grandes */
+    margin: 20px auto; /* Centraliza o container e adiciona margem superior/inferior */
+    gap: 2%; /* Espaço entre os itens */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.conteudo-principal{
+    flex-basis: 68%;
+    flex-grow: 1;
+    background-color: #e9e9e9;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 header h1, footer p{
     margin: 0;
+}
+
+footer{
+    padding-left: 51px;
+}
+
+h2, h1{
+    padding-left: 41px;
 }
